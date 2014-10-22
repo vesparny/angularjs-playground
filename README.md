@@ -13,6 +13,7 @@ run with
 * https://github.com/gocardless/angularjs-style-guide
 * https://github.com/toddmotto/angularjs-styleguide
 * https://github.com/angular/angular-seed
+* https://github.com/toddmotto/Angular-Motto
 
 
 ##todo
