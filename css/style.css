@@ -23,3 +23,24 @@ ul.rating {
 .rating .filled {
   color: #21568b;
 }
+.pure-form input:focus:invalid,
+.pure-form textarea:focus:invalid,
+.pure-form select:focus:invalid {
+  color: inherit;
+  border-color: inherit;
+}
+.pure-form input:focus:invalid:focus,
+.pure-form textarea:focus:invalid:focus,
+.pure-form select:focus:invalid:focus {
+  border-color: #129FEA;
+}
+.pure-form input.ng-invalid {
+  border: 1px solid red;
+}
+.pure-form input.ng-valid {
+  border: 1px solid green;
+}
+
+.pure-form input.ng-pristine {
+  border: 1px solid #ccc;
+}

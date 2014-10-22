@@ -4,9 +4,26 @@
       <section class="post">
         <h2>Form validation with ng-messages</h2>
         <div>
-          <p>
-            content
-          </p>
+          <form class="pure-form pure-form-stacked" name="form" novalidate ng-submit="miscellaneous.submit()">
+            <fieldset>
+              <legend>A Form</legend>
+
+              <label for="email">Email</label>
+              <input id="email" type="email" ng-model="miscellaneous.data.email" placeholder="Email" required>
+
+              <label for="password">Password</label>
+              <input id="password" ng-minlength=5 type="password" ng-model="miscellaneous.data.password" placeholder="Password" required>
+
+              <label for="remember" class="pure-checkbox">
+                <input id="remember" type="checkbox" ng-model="miscellaneous.data.remember"> Remember me
+              </label>
+
+              <button ng-disabled="form.$invalid" type="submit" class="pure-button pure-button-primary">Sign in</button>
+            </fieldset>
+            <pre>
+              {{miscellaneous.data}}
+            </pre>
+          </form>
         </div>
       </section>
       <section class="post">

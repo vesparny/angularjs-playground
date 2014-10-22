@@ -24,7 +24,7 @@
       });
   }
 
-  function miscellaneousCtrl($log) {
+  function miscellaneousCtrl($log, $scope) {
     /*jshint validthis:true */
     var miscellaneous = this;
     miscellaneous.data = {};
@@ -33,6 +33,14 @@
     miscellaneous.data.rating = 5;
     miscellaneous.doSomethingWithRating = function(rating) {
       $log.debug('Rating selected - ' + rating);
+    };
+
+    miscellaneous.submit = function() {
+      if ($scope.form.$valid) {
+        $log.debug('sumitted');
+      } else {
+        $log.error('invalid');
+      }
     };
   }
 
