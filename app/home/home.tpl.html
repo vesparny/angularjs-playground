@@ -1,0 +1,17 @@
+<div class="pure-g">
+  <div class="content pure-u-1 pure-u-md-4-4">
+    <div class="posts">
+      <section ng-repeat="el in home.data" class="post">
+        <header>
+          <img height="48" width="48" ng-src="{{ el.picture }}">
+          <h2>{{el.name}}</h2>
+        </header>
+        <div>
+          <p>
+            {{el.about}}
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
