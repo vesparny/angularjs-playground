@@ -21,6 +21,7 @@
     'miscellanoeous',
     'header',
     'services.http',
+    'services.utils',
     'interceptors.http',
     'directives.version',
     'directives.percentage',
