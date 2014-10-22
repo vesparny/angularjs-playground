@@ -19,3 +19,4 @@ run with
 * check injector for cordova (museum, use it for switch from localstorage to server calls)
 * get popupService from injector (old friends)
 * form validation with ng-message example
+* add tests from angular-seed
