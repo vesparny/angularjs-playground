@@ -22,12 +22,13 @@
             </fieldset>
           </form>
           <pre>
-                {{ miscellaneous.data }}
+              percentage:  {{ miscellaneous.data.percentage }}
             </pre>
         </div>
         <div>
-          <h3>rating</h3>
-          <div rating rating-value="miscellaneous.data.rating" max="10" on-rating-selected="miscellaneous.saveRating(rating)"></div>
+          <h3>rating: {{ miscellaneous.data.rating }}</h3>
+          <div rating rating-value="miscellaneous.data.rating" max="10" on-rating-selected="miscellaneous.doSomethingWithRating(rating)"></div>
+          <div rating readonly="true" rating-value="miscellaneous.data.rating" max="5" on-rating-selected="miscellaneous.saveRating(rating)"></div>
         </div>
       </section>
       <section class="post">
