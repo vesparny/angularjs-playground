@@ -4,7 +4,6 @@
   function httpInterceptor($q, $log) {
     return {
       request: function(config) {
-        $log.debug(config);
         return config;
       },
       requestError: function(rejection) {
@@ -12,7 +11,7 @@
         return $q.reject(rejection);
       },
       response: function(response) {
-        $log.debug(response);
+        $log.debug('response: ', response);
         return response;
       },
       responseError: function(rejection) {
@@ -21,7 +20,7 @@
       }
     };
   }
-  
+
   angular.module('interceptors.http', [])
     .factory('httpInterceptor', httpInterceptor);
 })();

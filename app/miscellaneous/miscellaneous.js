@@ -24,11 +24,16 @@
       });
   }
 
-  function miscellaneousCtrl() {
+  function miscellaneousCtrl($window) {
     /*jshint validthis:true */
     var miscellaneous = this;
     miscellaneous.data = {};
     miscellaneous.data.percentage = 10;
+
+    miscellaneous.data.rating = 5;
+    miscellaneous.saveRating = function(rating) {
+      $window.alert('Rating selected - ' + rating);
+    };
   }
 
   angular.module('miscellanoeous', [])

@@ -24,6 +24,7 @@
     'interceptors.http',
     'directives.version',
     'directives.percentage',
+    'directives.rating',
     'filters.uppercase'
   ])
   .config(config)

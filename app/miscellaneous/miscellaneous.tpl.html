@@ -12,19 +12,22 @@
       <section class="post">
         <h2>Directives</h2>
         <div>
-          <p>
-            <form class="pure-form pure-form-aligned">
-              <fieldset>
-                <div class="pure-control-group">
-                  <label for="name">Percentage</label>
-                  <input id="name" type="text" ng-model="miscellaneous.data.percentage" percentage>
-                </div>
-              </fieldset>
-            </form>
-            <pre>
+          <h3>percentage</h3>
+          <form class="pure-form pure-form-aligned">
+            <fieldset>
+              <div class="pure-control-group">
+                <label for="name">Percentage</label>
+                <input id="name" type="text" ng-model="miscellaneous.data.percentage" percentage>
+              </div>
+            </fieldset>
+          </form>
+          <pre>
                 {{ miscellaneous.data }}
             </pre>
-          </p>
+        </div>
+        <div>
+          <h3>rating</h3>
+          <div rating rating-value="miscellaneous.data.rating" max="10" on-rating-selected="miscellaneous.saveRating(rating)"></div>
         </div>
       </section>
       <section class="post">
