@@ -23,10 +23,10 @@
   function dataServiceHttpImpl($http) {
     return {
       get: function(url) {
-        return $http.get('/' + url);
+        return $http.get('' + url);
       },
       post: function(url, data) {
-        return $http.post('/+' + url, data);
+        return $http.post('' + url, data);
       }
     };
   }
