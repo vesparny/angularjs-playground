@@ -2,7 +2,7 @@
 inspired by http://www.befundoo.com/university/tutorials/angularjs-directives-tutorial/
 */
 (function() {
-  "use strict";
+  'use strict';
 
   function ratingDirective() {
     return {

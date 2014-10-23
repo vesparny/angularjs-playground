@@ -1,5 +1,5 @@
 (function() {
-  "use strict";
+  'use strict';
 
   angular.element(document).ready(function() {
     angular.bootstrap(document, ['app']);
@@ -10,7 +10,7 @@
     DataServiceProvider.forceLocalStorage(true);
     $urlRouterProvider.otherwise('/');
     $logProvider.debugEnabled(true);
-    $httpProvider.interceptors.push("httpInterceptor");
+    $httpProvider.interceptors.push('httpInterceptor');
   }
 
   function run($log) {
