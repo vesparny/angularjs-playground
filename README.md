@@ -3,8 +3,10 @@
 
 ###A starting point for being up and running in minutes with angularJS.
 
-what inside:
+see a working example here http://vesparny.github.io/angularjs-playground
+
 * directives examples and best practices
+* using `parsers` and `formatters` in directives
 * an example of safe `eventBus` service
 * using providers for switching different implementations of the same service using the `$injector`
 *  a folder structure organized `by feature` (useful for non-trivial apps)
@@ -23,3 +25,14 @@ run with
 
 ###TODO
 * integrate this with http://vesparny.github.io/ng-kickstart/
+
+###Contributing
+Fell free to contribute, fork, pull request, hack. Thanks!
+
+###Author
++	[@vesparny](https://twitter.com/vesparny)
++	[http://alessandro.arnodo.net](http://alessandro.arnodo.net)
++	<mailto:alessandro@arnodo.net>
+
+###License
+see LICENSE file.
