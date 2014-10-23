@@ -5,6 +5,7 @@
 
 see a working example here http://vesparny.github.io/angularjs-playground
 
+* it uses `ui-router`
 * directives examples and best practices
 * using `parsers` and `formatters` in directives
 * an example of safe `eventBus` service
