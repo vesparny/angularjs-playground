@@ -30,7 +30,8 @@
     miscellaneous.data = {};
     miscellaneous.data.percentage = 10;
 
-    miscellaneous.data.rating = 5;
+    miscellaneous.data.rating = 7;
+    miscellaneous.data.rating1 = 4;
     miscellaneous.doSomethingWithRating = function(rating) {
       $log.debug('Rating selected - ' + rating);
     };

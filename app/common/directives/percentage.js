@@ -9,7 +9,7 @@
         function fromUser(text) {
           return text.replace('%', '');
         }
-        
+
         function toUser(text) {
           return text + '%';
         }

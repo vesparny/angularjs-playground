@@ -3,17 +3,33 @@
     <div class="posts">
       <section class="post">
         <h2>Form validation with ng-messages</h2>
+        <div class="heading">A simple example of form validation using custom validators and ng-messages</div>
         <div>
           <form class="pure-form pure-form-stacked" name="form" novalidate ng-submit="miscellaneous.submit()">
             <fieldset>
               <legend>A Form</legend>
-
-              <label for="email">Email</label>
-              <input id="email" type="email" ng-model="miscellaneous.data.email" placeholder="Email" required>
-
+              <label for="email">Email (try to fill with 'admin@example.com' to see the custom validator in action)</label>
+              <input id="email" unique-email-validator="emails.json" name="email" type="email" ng-model="miscellaneous.data.email" placeholder="Email" required>
+              <div ng-messages="!form.email.$pristine && form.email.$error" class="error">
+                <div ng-message="required">
+                  You forgot to enter your email address...
+                </div>
+                <div ng-message="email">
+                  You did not enter your email address correctly...
+                </div>
+                <div ng-message="recordLoading">Checking database...</div>
+                <div ng-message="recordAvailable">The email address is already in use...</div>
+              </div>
               <label for="password">Password</label>
-              <input id="password" ng-minlength=5 type="password" ng-model="miscellaneous.data.password" placeholder="Password" required>
-
+              <input id="password" name="password" ng-minlength=5 type="password" ng-model="miscellaneous.data.password" placeholder="Password" required>
+              <div ng-messages="!form.password.$pristine && form.password.$error" class="error">
+                <div ng-message="required">
+                  You forgot to enter your password...
+                </div>
+                <div ng-message="minlength">
+                  Your password should be at least 5 characters long...
+                </div>
+              </div>
               <label for="remember" class="pure-checkbox">
                 <input id="remember" type="checkbox" ng-model="miscellaneous.data.remember"> Remember me
               </label>
@@ -21,7 +37,9 @@
               <button ng-disabled="form.$invalid" type="submit" class="pure-button pure-button-primary">Sign in</button>
             </fieldset>
             <pre>
-              {{miscellaneous.data}}
+              email: {{miscellaneous.data.email}}
+              password: {{miscellaneous.data.password}}
+              remember: {{miscellaneous.data.remember}}
             </pre>
           </form>
         </div>
@@ -30,6 +48,7 @@
         <h2>Directives</h2>
         <div>
           <h3>percentage</h3>
+          <div class="heading">A percentage directive which uses parsers anf formatters</div>
           <form class="pure-form pure-form-aligned">
             <fieldset>
               <div class="pure-control-group">
@@ -44,8 +63,9 @@
         </div>
         <div>
           <h3>rating: {{ miscellaneous.data.rating }}</h3>
+          <div class="heading">A <code>rating</code> directive in editable and readonly mode</div>
           <div rating rating-value="miscellaneous.data.rating" max="10" on-rating-selected="miscellaneous.doSomethingWithRating(rating)"></div>
-          <div rating readonly="true" rating-value="miscellaneous.data.rating" max="5" on-rating-selected="miscellaneous.saveRating(rating)"></div>
+          <div rating readonly="true" rating-value="miscellaneous.data.rating1" max="5" on-rating-selected="miscellaneous.saveRating(rating)"></div>
         </div>
       </section>
       <section class="post">

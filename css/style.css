@@ -34,7 +34,10 @@ ul.rating {
 .pure-form select:focus:invalid:focus {
   border-color: #129FEA;
 }
-.pure-form input.ng-invalid {
+.error {
+  color: red;
+}
+error, .pure-form input.ng-invalid {
   border: 1px solid red;
 }
 .pure-form input.ng-valid {
@@ -43,4 +46,9 @@ ul.rating {
 
 .pure-form input.ng-pristine {
   border: 1px solid #ccc;
+}
+
+.heading {
+  color:green;
+  font-size: 1em;
 }

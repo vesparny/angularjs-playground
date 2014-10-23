@@ -16,6 +16,7 @@
   }
 
   angular.module('app', [
+    'ngMessages',
     'ui.router',
     'home',
     'miscellanoeous',
@@ -24,6 +25,7 @@
     'services.utils',
     'interceptors.http',
     'directives.version',
+    'directives.uniqueEmailValidator',
     'directives.percentage',
     'directives.rating',
     'filters.uppercase'
