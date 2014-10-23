@@ -69,11 +69,18 @@
         </div>
       </section>
       <section class="post">
-        <h2>Filters</h2>
+        <h2>Varoius</h2>
         <div>
-          <p>
-            content
-          </p>
+          <h3>interceptor and injector</h3>
+          <div>
+            <div class="heading">In case of server error a popup will be shown, the service wich fires it is taken from the injector.</div>
+            <a class="button-error pure-button" href ng-click="miscellaneous.fireServerError()">Fire server error</a>
+          </div>
+          <h3>EventBus service</h3>
+          <div>
+            <div class="heading">Click the button to fire an event, and look at your console.</div>
+            <a class="pure-button pure-button-primary" href ng-click="miscellaneous.triggerEvent('hello')">trigger event</a>
+          </div>
         </div>
       </section>
     </div>

@@ -17,5 +17,5 @@
   }
 
   angular.module('services.enventBus', [])
-    .factory('EnventBus', eventBus);
+    .factory('EventBus', eventBus);
 })();

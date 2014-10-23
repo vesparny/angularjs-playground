@@ -1,10 +1,13 @@
 (function() {
   'use strict';
 
-  function utils($http) {
+  function utils($http, $window) {
     return {
       deepCopy: function(obj) {
         return JSON.parse(JSON.stringify(obj));
+      },
+      alertError: function(msg) {
+        return $window.alert(msg);
       }
     };
   }

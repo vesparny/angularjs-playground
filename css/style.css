@@ -37,18 +37,20 @@ ul.rating {
 .error {
   color: red;
 }
-error, .pure-form input.ng-invalid {
+error,
+.pure-form input.ng-invalid {
   border: 1px solid red;
 }
 .pure-form input.ng-valid {
   border: 1px solid green;
 }
-
 .pure-form input.ng-pristine {
   border: 1px solid #ccc;
 }
-
 .heading {
-  color:green;
+  color: green;
   font-size: 1em;
+}
+.button-error {
+  background: rgb(202, 60, 60);
 }

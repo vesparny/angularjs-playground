@@ -25,6 +25,7 @@
       'header',
       'services.data',
       'services.utils',
+      'services.enventBus',
       'interceptors.http',
       'directives.version',
       'directives.uniqueEmailValidator',
