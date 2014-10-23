@@ -1,7 +1,15 @@
 
 #AngularJS playground
 
-A starting point for being up and running in minutes with angularJS
+###A starting point for being up and running in minutes with angularJS.
+
+what inside:
+* directives examples and best practices
+* an example of safe `eventBus` service
+* using providers for switching different implementations of the same service using the `$injector`
+*  a folder structure organized `by feature` (useful for non-trivial apps)
+* an interceptor example, and how to use `$injector` within it.
+* custom validator example and hot to use AngularJS 1.3 `ng-messages`*
 
 run with
 
@@ -10,14 +18,8 @@ run with
 
 ###Based on:
 
-* https://github.com/gocardless/angularjs-style-guide
 * https://github.com/toddmotto/angularjs-styleguide
 * https://github.com/angular/angular-seed
-* https://github.com/toddmotto/Angular-Motto
 
-
-##todo
-* check injector for cordova (museum, use it for switch from localstorage to server calls)
-* get popupService from injector (old friends)
-* form validation with ng-message example
-* add tests from angular-seed
+###TODO
+* integrate this with http://vesparny.github.io/ng-kickstart/

@@ -7,7 +7,7 @@
 
   function config($stateProvider, $urlRouterProvider, $logProvider, $httpProvider, DataServiceProvider) {
     //force to use localstorage, this is useful for switch implementation of the same service.
-    DataServiceProvider.forceLocalStorage(true);
+    DataServiceProvider.forceLocalStorage(false);
     $urlRouterProvider.otherwise('/');
     $logProvider.debugEnabled(true);
     $httpProvider.interceptors.push('httpInterceptor');
