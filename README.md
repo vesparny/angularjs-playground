@@ -11,7 +11,7 @@ see a working example here http://vesparny.github.io/angularjs-playground
 * using providers for switching different implementations of the same service using the `$injector`
 *  a folder structure organized `by feature` (useful for non-trivial apps)
 * an interceptor example, and how to use `$injector` within it.
-* custom validator example and hot to use AngularJS 1.3 `ng-messages`*
+* custom validator example and hot to use AngularJS 1.3 `ng-messages`
 
 run with
 
