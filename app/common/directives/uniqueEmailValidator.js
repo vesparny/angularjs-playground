@@ -24,6 +24,7 @@
           setAsLoading(true);
           setAsAvailable(false);
 
+          //in real world you should call server here
           if (value === 'admin@example.com') {
             setAsLoading(false);
             setAsAvailable(false);
