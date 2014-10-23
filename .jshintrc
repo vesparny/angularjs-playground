@@ -8,5 +8,7 @@
   "immed": true,
   "latedef": true,
   "newcap": true,
-  "trailing": true
+  "trailing": true,
+  "quotmark": "single",
+  "strict": true
 }

@@ -20,8 +20,8 @@
             templateUrl: 'app/home/home.tpl.html',
             controller: 'HomeCtrl as home',
             resolve: {
-              data: function(HttpService){
-                return HttpService.get('data.json');
+              data: function(DataService){
+                return DataService.get('data.json');
               }
             }
           }
