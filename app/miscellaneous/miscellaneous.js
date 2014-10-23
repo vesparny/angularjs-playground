@@ -32,6 +32,7 @@
 
     miscellaneous.data.rating = 7;
     miscellaneous.data.rating1 = 4;
+
     miscellaneous.doSomethingWithRating = function(rating) {
       $log.debug('Rating selected - ' + rating);
     };
@@ -42,7 +43,7 @@
 
     EventBus.on('myEvent', function(event, data) {
       $log.info('%s has been fired with payload: %s', event.name, data);
-    });
+    }, $scope);
 
     miscellaneous.triggerEvent = function(message) {
       EventBus.emit('myEvent', message);
